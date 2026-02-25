@@ -4,7 +4,7 @@
 **Estudiante:** Jeisson Fabian Fonseca Soler  
 
 **URL del proyecto desplegado:**  
-https://dwre-2026-1.github.io/parcial-pr-ctico-jeissonfonse16/
+https://dwre-2026-1.github.io/parcial-pr-ctico-jeissonfonse16/](https://dwre-2026-1.github.io/my-cv-jeissonfonse16/
 
 ---
 
