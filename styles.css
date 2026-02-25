@@ -1,0 +1,336 @@
+/* Este es un comentario */
+/* Enlace tu CSS al HTML */
+
+/* Aquí van tus estilos CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f3f6fb;
+    color: #222836;
+    min-height: 100vh;
+    padding: 32px 8px;
+  }
+  
+  /* CONTENEDOR PRINCIPAL */
+  .container {
+    max-width: 980px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(30, 54, 90, 0.10), 0 2px 6px rgba(30,54,90,0.08);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  /* SIDEBAR (COLUMNA IZQUIERDA) */
+  .sidebar {
+    background: #193b6b;
+    color: #fff;
+    width: 32%;
+    min-width: 260px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #255085;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    margin-bottom: 24px;
+  }
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .sidebar h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #b7d2f7;
+  }
+  
+  .sidebar section {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  
+  .sidebar h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #e2eafc;
+    border-left: 4px solid #75a7eb;
+    padding-left: 8px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .sidebar ul li {
+    font-size: 0.97rem;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+  }
+  .sidebar ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 7px;
+    height: 7px;
+    background: #75a7eb;
+    border-radius: 2px;
+  }
+  
+  .sidebar .languages ul li::before {
+    background: #fcc419;
+  }
+  
+  /* COL. DERECHA - CONTENIDO PRINCIPAL */
+  .content {
+    width: 68%;
+    padding: 42px 44px 36px 44px;
+    background: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .content section {
+    margin-bottom: 12px;
+  }
+  
+  .content h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    color: #1b3457;
+  }
+  .content h2::after {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 3px;
+    background: #5CA6FA;
+    border-radius: 2px;
+    margin-top: 7px;
+  }
+  
+  .content .profile p {
+    font-size: 1.05rem;
+    line-height: 1.62;
+    color: #343a40;
+  }
+  
+  /* Experiencia/Educación */
+  .company, .institution {
+    font-weight: 600;
+    color: #2458a6;
+  }
+  
+  article {
+    margin-bottom: 18px;
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eff3fa;
+  }
+  article:last-child {
+    border-bottom: none;
+  }
+  
+  article h3 {
+    font-size: 1.11rem;
+    font-weight: 600;
+    color: #223d63;
+    margin-bottom: 2px;
+  }
+  
+  article span, article time {
+    font-size: 0.98rem;
+  }
+  
+  article ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 7px;
+  }
+  article ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 7px;
+    color: #495867;
+    font-size: 0.99rem;
+  }
+  article ul li::before {
+    content: '•';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    color: #5ca6fa;
+    font-size: 1.22rem;
+    line-height: 1;
+  }
+
+  /* Lista de intereses */
+  .interests ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 7px;
+  }
+  .interests ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 7px;
+    color: #495867;
+    font-size: 0.99rem;
+  }
+  .interests ul li::before {
+    content: '•';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    color: #5ca6fa;
+    font-size: 1.22rem;
+    line-height: 1;
+  }
+  
+  /* Fila empresa/institución + fechas */
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .date-range {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #8da8ca;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+  .date-range time {
+    font-style: normal;
+  }
+
+  @media (max-width: 600px) {
+    .meta-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }
+  }
+  
+  /* General Section Divider (Líneas suaves) */
+  .content section:not(:last-child) {
+    border-bottom: 1px solid #e9f0fa;
+    padding-bottom: 18px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      max-width: 96vw;
+      border-radius: 14px;
+    }
+    .sidebar, .content {
+      width: 100%;
+      border-radius: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .sidebar {
+      border-top-left-radius: 14px;
+      border-top-right-radius: 14px;
+      padding-top: 30px;
+      padding-bottom: 26px;
+    }
+    .content {
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+      padding-top: 28px;
+      padding-bottom: 24px;
+      gap: 22px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 4px;
+    }
+    .container {
+      margin: 10px auto;
+      box-shadow: 0 4px 18px rgba(30, 54, 90, 0.08);
+      border-radius: 8px;
+    }
+    .sidebar, .content {
+      padding: 17px 7vw;
+    }
+    .sidebar h1 {
+      font-size: 1.32rem;
+    }
+    .sidebar h2 {
+      font-size: 0.95rem;
+      margin-bottom: 18px;
+    }
+    .sidebar section {
+      margin-bottom: 14px;
+    }
+    .content h2 {
+      font-size: 1.05rem;
+    }
+    .content .profile p,
+    article ul li {
+      font-size: 0.99rem;
+    }
+    .profile-picture {
+      width: 84px;
+      height: 84px;
+      margin-bottom: 18px;
+    }
+  }
+  
+  /* Scrollbar minimal */
+  ::-webkit-scrollbar {
+    width: 7px;
+    background: #f3f6fb;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #bed6fa;
+    border-radius: 4px;
+  }
